@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="JavaWebIntentoCuatroPU"
+		transaction-type="JTA">
+		<jta-data-source>jdbc/ConnectionJavaWebDos</jta-data-source>
+		<class>com.JavaWebIntentoCuatro.modelo.MatCliente</class>
+		<class>com.JavaWebIntentoCuatro.modelo.MatDetalleFactura</class>
+		<class>com.JavaWebIntentoCuatro.modelo.MatFactura</class>
+		<class>com.JavaWebIntentoCuatro.modelo.MatProducto</class>
+		<class>com.JavaWebIntentoCuatro.modelo.MatRol</class>
+		<class>com.JavaWebIntentoCuatro.modelo.MatTipoProducto</class>
+		<class>com.JavaWebIntentoCuatro.modelo.MatUsuario</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/db_java_web"/>
+			<property name="javax.persistence.jdbc.user" value="nicolas"/>
+			<property name="javax.persistence.jdbc.password" value="123456789"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+			<property name="hibernate.hbm2ddl.auto" value="validate"/>
+			
+			
+		
+		</properties>
+		
+		
+<!-- 		<properties name="open"></properties> -->
+	</persistence-unit>
+</persistence>
