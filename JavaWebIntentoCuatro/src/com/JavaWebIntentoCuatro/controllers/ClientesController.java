@@ -46,13 +46,20 @@ public class ClientesController implements Serializable {
 	public Consulta getConsulta() {
 		return consulta;
 	}
-
+	
+	/**
+	 * set object
+	 * @param consulta Object assign
+	 */
 	public void setConsulta(Consulta consulta) {
 		this.consulta = consulta;
 	}
 
 	
 	// METODO PARA TRAER LOS DATOS DE LOS MICROSERVICISO (ESTADO= No FUNCIONA NECESITA DE UNA LIBRERIA "client.config" de jersey )
+	/**
+	 * 
+	 */
 	public void transaccion() {
          try {
         	 System.out.println(consulta.toString());
